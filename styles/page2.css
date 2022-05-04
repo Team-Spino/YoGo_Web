@@ -1,0 +1,59 @@
+/* page 2 Problem */
+
+.chat-bubble-area {
+
+}
+.left-bubble-area {
+    display: flex;
+    flex-direction: row;
+    padding-right: 500px;
+}
+.left-person {
+    display: flex;
+    flex-direction: column;
+}
+.person-explanation {
+
+}
+.left-person img {
+    width: 115px;
+    height: 115px;
+}
+.left-bubble {
+    width: 300px;
+    height: 40px;
+    background-color: skyblue;
+    border-radius: 20px 20px 20px 5px;
+}
+.left-bubble-text {
+    padding-left: 30px;
+    color: white;
+    line-height: 40px; /* */
+}
+.right-bubble-area {
+    display: flex;
+    flex-direction: row;
+    padding-left: 500px;
+}
+
+.right-person {
+    flex-direction: column;
+}
+.right-person img {
+    width: 115px;
+    height: 115px;
+}
+.right-bubble {
+    width: 350px;
+    height: 40px;
+    background-color: #EEEEEE;
+    border-radius: 20px 20px 5px 20px;
+}
+.right-bubble-text {
+    padding-left: 30px;
+    line-height: 40px; /* */
+}
+.problem-explanation {
+    padding-top: 100px;
+    font-size: 22px;
+}

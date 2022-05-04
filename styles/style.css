@@ -1,0 +1,40 @@
+:root {
+    --logo-width : 180px;
+    --logo-height : 180px;
+    --sol-item-width : 200px;
+    --gray : #667080;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.title h3{
+    font-size: 34px;
+    font-weight: bold;
+}
+.gray-font {
+    color: var(--gray);
+}
+
+body {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+mark {
+    background-color: rgba(133, 190, 252, 50%);
+}
+
+
+
+
+
+

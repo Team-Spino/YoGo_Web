@@ -1,0 +1,61 @@
+/* page 3 solution */
+#section2 .container {
+    background-color: #FAFBFD;
+}
+
+.solution-area {
+    display: flex;
+    flex-direction: row;
+}
+.as-is-area{
+    padding-right: 110px;
+    text-align: center;
+    align-items: center;
+}
+.as-is {
+    width: var(--sol-item-width);
+    height: 50px;
+    background-color: lightgray;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+    font-weight: bold;
+    margin-left: calc(var(--sol-item-width) /2);
+}
+.as-is-explanation-set {
+    padding-top: 108px;
+    font-weight: bold;
+}
+.as-is-explanation {
+    padding-top: 75px;
+    
+}
+.arrow {
+    padding-top: 27%;
+}
+.arrow-item {
+    font-weight: bold;
+}
+.to-be-area{
+    padding-left: 110px;
+    text-align: center;
+}
+.to-be {
+    width: var(--sol-item-width);
+    height: 50px;
+    background-color: skyblue;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 50px;
+    color: white; 
+    font-weight: bold;
+    margin-left: 65px;
+}
+.to-be-explanation-set {
+    padding-top: 108px;
+    font-weight: bold;
+}
+.to-be-explanation {
+    padding-top: 75px;
+}
