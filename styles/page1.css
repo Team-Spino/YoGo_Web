@@ -29,7 +29,7 @@
 }
 .download button{
     border: 1px solid skyblue;
-    background-color: #85BEFC;
+    /* background-color: #85BEFC; */
     color: white;
     padding: 5px;
     width: 300px;

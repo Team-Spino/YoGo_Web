@@ -44,7 +44,7 @@
 .to-be {
     width: var(--sol-item-width);
     height: 50px;
-    background-color: skyblue;
+    /* background-color: #85BEFC; */
     border-radius: 30px;
     text-align: center;
     line-height: 50px;
