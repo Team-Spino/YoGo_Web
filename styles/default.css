@@ -7,9 +7,9 @@
 
 
 :root {
-    --logo-width : 180px;
-    --logo-height : 180px;
-    --sol-item-width : 200px;
+    --logo-width : 11.25rem;
+    --logo-height : 11.25rem;
+    --sol-item-width : 12.5rem;
     --gray : #667080;
     --mark-color : rgba(133, 190, 252, 50%);
     --main-color : #85BEFC;
@@ -29,7 +29,7 @@
     left: 10%;
 }
 .title h3{
-    font-size: 34px;
+    font-size: 2.125rem;
     font-weight: bold;
 }
 .gray-font {

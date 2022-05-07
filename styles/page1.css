@@ -17,38 +17,38 @@
     height: var(--logo-height);
 }
 .introduction {
-    font-size: 25px;
+    font-size: 1.563rem;
     /* padding-left: 150px; */
-    letter-spacing: 5px;
-    padding: calc(var(--logo-height) / 10.5) 0 0 150px;
+    letter-spacing: 0.313rem;
+    padding: calc(var(--logo-height) / 10.5) 0 0 9.375rem;
     
 } 
 .download {
-    padding : 50px;
+    padding : 3.125rem;
     font-weight: bold;
 }
 .download button{
-    border: 1px solid skyblue;
+    border: 0.063rem solid skyblue;
     /* background-color: #85BEFC; */
     color: white;
-    padding: 5px;
-    width: 300px;
-    height: 55px;
-    border-radius: 10px;
+    padding: 0.313rem;
+    width: 18.75rem;
+    height: 3.438rem;
+    border-radius: 0.625rem;
     justify-content: center;
 }
 .overview{
-    margin-right: 300px;
+    margin-right: 18.75rem;
 }
 .overview-title {
-    font-size: 27px;
+    font-size: 1.688rem;
     font-weight: bold;
-    padding-right: 500px;
+    padding-right: 31.25rem;
     
 }
 .overview-content {
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 .overview-content p {
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
 }

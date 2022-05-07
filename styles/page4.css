@@ -1,62 +1,62 @@
 /* page 4 explanation */
 
 .fourth-title {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bold;
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
 }
 .experience-section {
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
 }
 .experience-section .button-left, .button-right {
-    height:30px;
-    width: 30px;
+    height:1.875rem;
+    width: 1.875rem;
     margin-top: 22%;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0);
-    border: 1px solid rgba(133, 190, 252, 50%);
+    border: 0.063rem solid rgba(133, 190, 252, 50%);
     color: var(--main-color);
 }
 .phone img {
-    width: 300px;
-    height: 500px;
+    width: 18.75rem;
+    height: 31.25rem;
 }
 .experience-explanation {
     
 }
 .explanation-list {
-    width: 700px;
-    margin: 30px;
+    width: 43.75rem;
+    margin: 1.875rem;
 }
 .explanation-title {
-    font-size: 35px;
+    font-size: 2.188rem;
     font-weight: bold;
     text-align: center;
 }
 .explanation-el-title {
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
 }
 .explanation {
     
-    width: 650px;
-    height: 200px;
-    margin: 30px;
+    width: 40.625rem;
+    height: 12.5rem;
+    margin: 1.875rem;
 }
 .explanation-content {
-    padding: 30px;
-    font-size: 20px;
+    padding: 1.875rem;
+    font-size: 1.25rem;
 }
 .download-suggestion {
-    padding-top: 30px;
+    padding-top: 1.875rem;
 }
 .download-suggestion-set {
-    padding: 30px;
+    padding: 1.875rem;
     text-align: center;
 }
 .download-suggestion-set .download {
-    padding: 20px;
+    padding: 1.25rem;
 }
 .download-suggestion {
     font-weight: bold;
