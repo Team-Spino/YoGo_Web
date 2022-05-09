@@ -48,7 +48,10 @@
 .overview-content {
     padding-left: 1.25rem;
     margin-right: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .overview-content p {
-    padding-bottom: 1.25rem;
+    /* padding-bottom: 1.25rem; */
 }

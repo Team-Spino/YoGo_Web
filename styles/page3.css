@@ -24,15 +24,19 @@
     margin-left: calc(var(--sol-item-width) /2);
 }
 .as-is-explanation-set {
-    padding-top: 6.75rem;
+    /* padding-top: 6.75rem; */
+    display: flex;
+    flex-direction: column;
     font-weight: bold;
+    width: 405px;
+    height: 365px;
+    justify-content: space-around;
 }
 .as-is-explanation {
-    padding-top: 4.688rem;
-    
+    /* padding-top: 4.688rem; */
 }
 .arrow {
-    padding-top: 27%;
+    padding-top: 21.5%;
 }
 .arrow-item {
     font-weight: bold;
@@ -52,9 +56,14 @@
     margin-left: 4.063rem;
 }
 .to-be-explanation-set {
-    padding-top: 6.75rem;
+    /* padding-top: 6.75rem; */
+    display: flex;
+    flex-direction: column;
     font-weight: bold;
+    width: 405px;
+    height: 365px;
+    justify-content: space-around;
 }
 .to-be-explanation {
-    padding-top: 4.688rem;
+    /* padding-top: 4.688rem; */
 }
