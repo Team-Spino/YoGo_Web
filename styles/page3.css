@@ -14,11 +14,11 @@
 }
 .as-is {
     width: var(--sol-item-width);
-    height: 3.125rem;
+    height: var(--sol-item-height);
     background-color: lightgray;
     border-radius: 1.875rem;
     text-align: center;
-    line-height: 3.125rem;
+    line-height: var(--sol-item-height);
     color: black;
     font-weight: bold;
     margin-left: calc(var(--sol-item-width) /2);
@@ -43,11 +43,10 @@
 }
 .to-be {
     width: var(--sol-item-width);
-    height: 3.125rem;
-    /* background-color: #85BEFC; */
+    height: var(--sol-item-height);
     border-radius: 1.875rem;
     text-align: center;
-    line-height: 3.125rem;
+    line-height: var(--sol-item-height);
     color: white; 
     font-weight: bold;
     margin-left: 4.063rem;
