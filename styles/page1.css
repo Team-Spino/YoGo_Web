@@ -38,16 +38,16 @@
     justify-content: center;
 }
 .overview{
-    margin-right: 18.75rem;
+    /* margin-right: 18.75rem; */
 }
 .overview-title {
     font-size: 1.688rem;
     font-weight: bold;
     padding-right: 31.25rem;
-    
 }
 .overview-content {
     padding-left: 1.25rem;
+    margin-right: 18.75rem;
 }
 .overview-content p {
     padding-bottom: 1.25rem;
