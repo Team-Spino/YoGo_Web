@@ -1,0 +1,48 @@
+@import './page1.css';
+@import './page2.css';
+@import './page3.css';
+@import './page4.css';
+@import './reset.css';
+
+
+
+:root {
+    --logo-width : 11.25rem;
+    --logo-height : 11.25rem;
+    --sol-item-width : 12.5rem;
+    --sol-item-height : 3.125rem;
+    --gray : #667080;
+    --mark-color : rgba(133, 190, 252, 50%);
+    --main-color : #85BEFC;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.title h3{
+    font-size: 2.125rem;
+    font-weight: bold;
+}
+.gray-font {
+    color: var(--gray);
+}
+.main-color {
+    background-color: var(--main-color);
+}
+
+body {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+mark {
+    background-color: var(--mark-color)
+}
