@@ -53,7 +53,7 @@
     line-height: var(--sol-item-height);
     color: white; 
     font-weight: bold;
-    margin-left: 4.063rem;
+    margin-left:calc(var(--sol-item-width) /2);
 }
 .to-be-explanation-set {
     /* padding-top: 6.75rem; */
