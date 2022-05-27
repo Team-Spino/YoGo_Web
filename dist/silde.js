@@ -5,6 +5,7 @@ const img = document.querySelector('.phone > img');
 const explanationContents = document.querySelector('.explanation-contents');
 const explanationElTitle = document.querySelector('.explanation-el-title');
 const phone = document.querySelector('.phone');
+
 const explanationTemplate1 = 
 `
 <div class="explanation-content">
@@ -51,7 +52,7 @@ rightBtn.addEventListener('click', () => {
     
     explanationElTitle.innerHTML = `<h3>${explanationArr.title[count]}</h3>`;
     explanationContents.innerHTML = explanationArr.contents[count];
-    
+    img.src = explanationArr.imgSrc[count];
     count++;
     if(count > contentsCount){
         count = 0;
