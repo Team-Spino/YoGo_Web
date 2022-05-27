@@ -14,6 +14,7 @@
     flex-direction: column;
 }
 .person-explanation {
+    justify-content: center;
 
 }
 .left-person img {
