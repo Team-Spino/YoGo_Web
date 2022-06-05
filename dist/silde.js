@@ -39,7 +39,7 @@ const explanationTemplate3 =
 const explanationArr = {
     title : ['일정 만들기1', '일정 만들기2','3333333'],
     contents : [explanationTemplate1, explanationTemplate2, explanationTemplate3],
-    imgSrc : ['../images/phone-1.png', '../images/phone-2.png', '../images/phone-3.png']
+    imgSrc : ['../images/phone-1-edit.png', '../images/phone-2-edit.png', '../images/phone-3-edit.png']
 }
 
 let count = 0;
@@ -63,6 +63,7 @@ leftBtn.addEventListener('click', () => {
     console.log("test222");
     explanationElTitle.innerHTML = `<h3>${explanationArr.title[count]}</h3>`;
     explanationContents.innerHTML = explanationArr.contents[count];
+    img.src = explanationArr.imgSrc[count];
     count--;
     if(count < 0){
         count = contentsCount;
