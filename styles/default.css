@@ -1,8 +1,9 @@
+@import './reset.css';
 @import './page1.css';
 @import './page2.css';
 @import './page3.css';
 @import './page4.css';
-@import './reset.css';
+
 
 
 
@@ -17,18 +18,18 @@
 }
 
 .container {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.title {
+/* .title {
     position: absolute;
     top: 10%;
     left: 10%;
-}
+} */
 .title h3{
     font-size: 2.125rem;
     font-weight: bold;
