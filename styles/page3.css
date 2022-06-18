@@ -22,6 +22,7 @@
         background-color: lightgray;
         border-radius: 1.875rem;
         text-align: center;
+        justify-content: center;
         line-height: var(--sol-item-height);
         color: black;
         font-weight: bold;
@@ -58,6 +59,7 @@
         height: var(--sol-item-height);
         border-radius: 1.875rem;
         text-align: center;
+        justify-content: center;
         line-height: var(--sol-item-height);
         color: white; 
         font-weight: bold;
@@ -80,7 +82,7 @@
 @media screen and (min-width : 598px) and (max-width : 767px){
 
 }
-@media screen and (min-width: 597px) {
+@media screen and (max-width: 597px) {
     
 
     #section2 > .container > .title h3{
@@ -99,6 +101,7 @@
         
     }
     .as-is-explanation-set {
+        width: 32.313rem;
         /* font-size: 20px; */
     }
     .to-be-area {
@@ -107,5 +110,16 @@
     .arrow-item {
         transform: rotate(90deg);
         padding: 100px;
+    }
+
+    .as-is {
+        margin-left:9rem;
+        font-size: 25px;
+    }
+    .to-be {
+        font-size: 25px;
+    }
+    .as-is-explanation-set {
+        font-size: 20px;
     }
 }

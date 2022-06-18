@@ -66,18 +66,18 @@
     }
 }
 
-@media screen and (min-width : 598px) and (max-width : 767px){
 
-}
-@media screen and (min-width: 597px) {
+@media (max-width: 597px) {
     .phone img{
-
-        align-items: center;
-        justify-content: center;
+        display: block;
+        margin: 0 auto;
     }
     .experience-section {
         display: flex;
         flex-direction: column;
         /* margin-bottom: 6.25rem; */
+    }
+    .explanation-content {
+        text-align: center;
     }
 }
