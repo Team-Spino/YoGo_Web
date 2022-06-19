@@ -44,7 +44,10 @@ body {
     font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 }
 mark {
-    background-color: var(--mark-color)
+    background-color: var(--mark-color);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
 }
 
 /* 597 이하 */
@@ -223,7 +226,7 @@ mark {
         display: flex;
         flex-direction: column;
         font-weight: bold;
-        width: 25.313rem;
+        /* width: 25.313rem; */
         height: 22.813rem;
         justify-content: space-around;
     }
@@ -260,7 +263,7 @@ mark {
         display: flex;
         flex-direction: column;
         font-weight: bold;
-        width: 25.313rem;
+        /* width: 25.313rem; */
         height: 22.813rem;
         justify-content: space-around;
     }
@@ -729,7 +732,7 @@ mark {
     .left-bubble-text {
         font-size: 30px;
         color: white;
-        padding: 15px;
+        padding: 10px;
         border-radius: 1.25rem 1.25rem 1.25rem 0.313rem;
     }
     .right-person img {
@@ -754,7 +757,7 @@ mark {
     .right-bubble-text {
         font-size: 30px;
         background-color: #EEEEEE;
-        padding: 15px;
+        padding: 10px;
         border-radius: 1.25rem 1.25rem 0.313rem 1.25rem;
     }
     .person-explanation{
@@ -764,8 +767,8 @@ mark {
     }
     .problem-explanation{
         margin-top: 100px;
-        padding: 10px;
-        font-size: 1.5rem;
+        padding: 30px;
+        font-size: 2rem;
     }
 
     /* page 3 solution */
@@ -801,7 +804,7 @@ mark {
         color: black;
         font-weight: bold;
         /* margin-left: calc(var(--sol-item-width) /2); */
-        font-size: 25px;
+        font-size: 40px;
     }
     .as-is-explanation-set {
         /* padding-top: 6.75rem; */
@@ -811,7 +814,7 @@ mark {
         /* width: 25.313rem; */
         height: 22.813rem;
         justify-content: space-around;
-        font-size: 20px;
+        font-size: 30px;
     }
     .to-be {
         /* 
@@ -829,7 +832,7 @@ mark {
         color: white; 
         font-weight: bold;
         /* margin-left:calc(var(--sol-item-width) /2); */
-        font-size: 25px;
+        font-size: 40px;
     }
     .to-be-explanation-set {
         /* padding-top: 6.75rem; */
@@ -839,7 +842,7 @@ mark {
         /* width: 25.313rem; */
         height: 22.813rem;
         justify-content: space-around;
-        font-size: 20px;
+        font-size: 30px;
     }
     .to-be-explanation {
         /* padding-top: 4.688rem; */
@@ -850,7 +853,7 @@ mark {
     }
     .arrow-item {
         transform: rotate(90deg);
-        padding: 50px;
+        padding: 100px;
     }
 
 /* page 4 explanation */
@@ -993,6 +996,7 @@ mark {
         
         aspect-ratio: auto 934.65 / 919.69;
     }  */
+
     .phone-img {
         width: 100%;
         max-width: 900px;
@@ -1038,6 +1042,14 @@ mark {
         /* padding-bottom: 1.25rem; */
     }
 /* page 2 Problem */
+    #section1 .title {
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        font-size: 2.5rem;
+        font-weight: bold;
+        /* padding-bottom: 6.25rem; */
+    }
     .chat-bubble-area {
         width: 80%;
     }
@@ -1091,9 +1103,17 @@ mark {
     }
     .problem-explanation {
         padding-top: 6.25rem;
-        font-size: 1.375rem;
+        font-size: 1.7rem;
     }
     /* page 3 solution */
+    #section2 .title {
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        font-size: 2.5rem;
+        font-weight: bold;
+        /* padding-bottom: 6.25rem; */
+    }
     
     #section2 .container {
         background-color: #FAFBFD;
@@ -1115,21 +1135,24 @@ mark {
         height: var(--sol-item-height);
         background-color: lightgray;
         border-radius: 1.875rem;
+        margin: 0 auto;
         text-align: center;
         justify-content: center;
         line-height: var(--sol-item-height);
         color: black;
         font-weight: bold;
-        margin-left: calc(var(--sol-item-width) /2);
+        font-size: 20px;
+        /* margin-left: calc(var(--sol-item-width) /2); */
     }
     .as-is-explanation-set {
         /* padding-top: 6.75rem; */
         display: flex;
         flex-direction: column;
         font-weight: bold;
-        width: 25.313rem;
+        /* width: 25.313rem; */
         height: 22.813rem;
         justify-content: space-around;
+        font-size: 20px;
     }
     .as-is-explanation {
         /* padding-top: 4.688rem; */
@@ -1139,6 +1162,7 @@ mark {
     }
     .arrow-item {
         font-weight: bold;
+        padding: 30px;
     }
     .to-be-area{
         padding-left: 6.875rem;
@@ -1151,22 +1175,25 @@ mark {
         */
         width: var(--sol-item-width); 
         height: var(--sol-item-height);
+        margin: 0 auto;
         border-radius: 1.875rem;
         text-align: center;
         justify-content: center;
         line-height: var(--sol-item-height);
         color: white; 
         font-weight: bold;
-        margin-left:calc(var(--sol-item-width) /2);
+        font-size: 20px;
+        /* margin-left:calc(var(--sol-item-width) /2); */
     }
     .to-be-explanation-set {
         /* padding-top: 6.75rem; */
         display: flex;
         flex-direction: column;
         font-weight: bold;
-        width: 25.313rem;
+        /* width: 25.313rem; */
         height: 22.813rem;
         justify-content: space-around;
+        font-size: 20px;
     }
     .to-be-explanation {
         /* padding-top: 4.688rem; */
