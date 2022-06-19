@@ -26,4 +26,4 @@ function checkSize(){
     }
 }
 
-setInterval(checkSize, 100);
+setInterval(checkSize, 500);
