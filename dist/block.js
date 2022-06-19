@@ -1,7 +1,7 @@
-console.log(window.screen.width+"x"+window.screen.height); // screen dimension
-console.log(window.screen.availWidth+"x"+window.screen.availHeight); //exclude os taskbar
-console.log(window.outerWidth+"x"+window.outerHeight); // browser size
-console.log(window.innerWidth+"x"+window.innerHeight); // viewport size
+// console.log(window.screen.width+"x"+window.screen.height); // screen dimension
+// console.log(window.screen.availWidth+"x"+window.screen.availHeight); //exclude os taskbar
+// console.log(window.outerWidth+"x"+window.outerHeight); // browser size
+// console.log(window.innerWidth+"x"+window.innerHeight); // viewport size
 
 
 const container = document.querySelectorAll('.container');
@@ -13,6 +13,7 @@ const container2 = container[2].innerHTML;
 const container3 = container[3].innerHTML;
 
 function checkSize(){
+    
     if(window.innerWidth <= 1200 && window.innerWidth >= 597){
         for(let i = 0; i < container.length; i++){
             container[i].innerHTML = '화면을 확대해주세요!😅';
@@ -26,4 +27,4 @@ function checkSize(){
     }
 }
 
-setInterval(checkSize, 500);
+window.addEventListener('resize', checkSize);

@@ -108,7 +108,7 @@
             </div>
             <div class="experience-section">
                 <div class="phone">
-                    <img src="images/phone-1-edit.png" alt="phone">
+                    <img src="images/phone1.png" alt="phone">
                 </div>
                 
                 <div class="experience-explanation">
@@ -125,7 +125,7 @@
                                 <h3>일정 만들기</h3>
                             </div>
                             <div class="explanation-contents">
-                                <button class="button-left"><img src="./images/arrow-left.svg"></button>
+                                <button class="button-left" style="cursor: pointer;" type="button"><img src="./images/arrow-left.svg"></button>
                                 <div class="explanation-content">
                                     <p>컬러 태그로 관련된 일정들을 지정해 보세요.</p>
                                     
@@ -133,7 +133,9 @@
                                     
                                     <p>알람이 울릴 요일을 선택해 일정을 관리하세요.</p>
                                 </div>
-                                <button class="button-right"><img src="./images/arrow-right.svg"></button>
+                                <button class="button-right" type="button" style="cursor: pointer;">
+                                    <img src="./images/arrow-right.svg">
+                                </button>
                             </div>
                             
                         </div>
@@ -142,10 +144,10 @@
                     
                     <div class="download-suggestion-set">
                         <div class="download-suggestion gray-font">
-                            YOGO를 계속 사용해보세요
+                            YOGO를 계속 사용해보려면?
                         </div>
                         <div class="download">
-                            <button type="button" onclick="window.open('https://apps.apple.com/kr/app/yogo-time-zone-planner/id1626444795')" style="cursor: pointer;" class="main-color">YOGO 시작하기 </button>
+                            <button type="button" onclick="window.open('https://apps.apple.com/kr/app/yogo-time-zone-planner/id1626444795')" style="cursor: pointer;"  class="main-color">YOGO 시작하기 <img src="./images/download.svg"> </button>
                         </div>
                     </div>
                 </div>
@@ -188,7 +190,7 @@
 </div>
 
 <script type="text/javascript" src="../dist/fullpage.js"></script>
-<script type="text/javascript" src="/dist/silde.js"></script>
+<script type="text/javascript" src="./dist/silde.js"></script>
 <script type="text/javascript" src="./dist/block.js"></script>
 <script type="text/javascript">
 	var myFullpage = new fullpage('#fullpage', {

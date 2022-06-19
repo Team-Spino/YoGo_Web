@@ -6,55 +6,59 @@ const explanationContent = document.querySelector('.explanation-content');
 const explanationElTitle = document.querySelector('.explanation-el-title');
 const phone = document.querySelector('.phone');
 
+console.log(rightBtn.innerHTML);
+
 const explanationTemplate1 = 
 `
-
-
-    <p>컬러 태그로 관련된 일정들을 지정해 보세요.111</p>
+    <p>일정 리스트 화면입니다.</p>
                                 
-    <p>시차를 알고싶은 도시와 시간을 설정해 알람을 설정해보세요.1111</p>
+    <p>플러스 버튼을 통해 일정을 추가할 수 있고 추가한 일정들을 확인할 수 있습니다. </p>
                                 
-    <p>알람이 울릴 요일을 선택해 일정을 관리하세요.111</p>
-
+    <p>상단의 캘린더를 통해 날짜 별로 일정을 확인할 수도 있고, 등록할 때 지정한 컬러 태그만 따로 확인할 수도 있습니다.</p>
 
 `
 const explanationTemplate2 = 
 `
-
-
-    <p>컬러 태그로 관련된 일정들을 지정해 보세요.222</p>
+    <p>일정 등록 화면입니다.</p>
                                 
-    <p>시차를 알고싶은 도시와 시간을 설정해 알람을 설정해보세요.222</p>
+    <p>상대 도시와 상대 도시의 날짜를 선택하면 그에 맞추어 일정이 등록됩니다.</p>
                                 
-    <p>알람이 울릴 요일을 선택해 일정을 관리하세요.222</p>
-
+    
 
 `
 const explanationTemplate3 = 
 `
-
-
-    <p>컬러 태그로 관련된 일정들을 지정해 보세요.333</p>
+    <p>사용자가 궁금해하는 도시의 시간대를 확인할 수 있는 화면입니다.</p>
                                 
-    <p>시차를 알고싶은 도시와 시간을 설정해 알람을 설정해보세요.333</p>
+    <p>플러스 버튼을 통해 사용자가 원하는 도시를 추가하여 시간을 확인할 수 있습니다.</p>
                                 
-    <p>알람이 울릴 요일을 선택해 일정을 관리하세요.333</p>
-
+    <p>돋보기 버튼을 통해 다른 도시의 현재 시간이 아닌 궁금한 시간을 확인할 수 있습니다.</p>
 
 `
+const explanationTemplate4 = 
+`
+    <p>돋보기 버튼을 누르면 나오는 화면입니다.</p>
+                                
+    <p>궁금한 도시의 시간을 입력하면 그 시간에 다른 도시의 시간을 확인할 수 있습니다.</p>
+                                
+   
 
-const buttonLeftDiv = `<button class="button-left"> < </button>`;
-const buttonRightDiv = `<button class="button-right"> > </button>`;
+`
+// const buttonLeftDiv = `<button class="button-left"><img src="./images/arrow-left.svg"></button>`;
+// const buttonRightDiv = `<button class="button-right"><img src="./images/arrow-right.svg"></button>`;
 const explanationArr = {
-    title : ['일정 만들기1', '일정 만들기2','3333333'],
-    contents : [explanationTemplate1, explanationTemplate2, explanationTemplate3],
-    imgSrc : ['../images/phone-1-edit.png', '../images/phone-2-edit.png', '../images/phone-3-edit.png']
+    title : ['일정 리스트 화면', '일정 등록 화면','현재 도시 시간 및 원하는 시간 확인', '다른 도시의 시간 확인 기능'],
+    contents : [explanationTemplate1, explanationTemplate2, explanationTemplate3, explanationTemplate4],
+    imgSrc : ['../images/phone1.png', '../images/phone2.png', '../images/phone3.png', '../images/phone4.png']
 }
 
 let count = 0;
-let contentsCount = 2; // 3개이므로 2로 설정
+let contentsCount = explanationArr.contents.length - 1; // 이미지 배열의 길이 - 1
 
 console.log(explanationArr.title[1]);
+
+explanationElTitle.innerHTML = `<h3>${explanationArr.title[count]}</h3>`;
+explanationContent.innerHTML = explanationArr.contents[count];
 
 
 rightBtn.addEventListener('click', () => {
