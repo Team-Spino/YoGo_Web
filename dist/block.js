@@ -6,7 +6,7 @@
 
 const container = document.querySelectorAll('.container');
 
-console.log(container[0].innerHTML);
+// console.log(container[0].innerHTML);
 const container0 = container[0].innerHTML;
 const container1 = container[1].innerHTML;
 const container2 = container[2].innerHTML;
