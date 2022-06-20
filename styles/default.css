@@ -80,6 +80,13 @@ mark {
     .overview h1 {
         font-size: 42px;
         font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .overview p {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .overview p:first-of-type {
         font-size: 20px;
@@ -97,7 +104,7 @@ mark {
         color: var(--main-color);
         justify-content: left;
         position: absolute;
-        bottom: 100px;
+        top: 3%;
         left: 10%;
     }
     .logo{
@@ -107,7 +114,7 @@ mark {
     
     /* page 2 */
     #section1 .title h3 { 
-        font-size: 2rem;
+        font-size: 1.3rem;
         font-weight: bold;
         position: absolute;
         top: 0;
@@ -183,7 +190,7 @@ mark {
     /* page 3 solution */
     
     #section2 > .container > .title h3{
-        font-size: 2rem;
+        font-size: 1.3rem;
         font-weight: bold;
         position: absolute;
         top: 0;
@@ -209,11 +216,13 @@ mark {
         border-radius: 1.875rem;
         text-align: center;
         justify-content: center;
-        line-height: var(--sol-item-height);
+        /* line-height: var(--sol-item-height); */
+        padding-top: 5px;
+        padding-bottom: 5px;
         color: black;
         font-weight: bold;
         /* margin-left: calc(var(--sol-item-width) /2); */
-        font-size: 20px;
+        font-size: 17px;
     }
     .as-is-explanation-set {
         /* padding-top: 6.75rem; */
@@ -223,7 +232,7 @@ mark {
         /* width: 25.313rem; */
         height: 150px;
         justify-content: space-around;
-        font-size: 15px;
+        font-size: 12px;
     }
     .to-be {
         /* 
@@ -237,11 +246,13 @@ mark {
         margin: 0 auto;
         text-align: center;
         justify-content: center;
-        line-height: var(--sol-item-height);
+        /* line-height: var(--sol-item-height); */
+        padding-top: 5px;
+        padding-bottom: 5px;
         color: white; 
         font-weight: bold;
         /* margin-left:calc(var(--sol-item-width) /2); */
-        font-size: 20px;
+        font-size: 17px;
     }
     .to-be-explanation-set {
         /* padding-top: 6.75rem; */
@@ -252,7 +263,7 @@ mark {
         /* height: 22.813rem; */
         height: 150px;
         justify-content: space-around;
-        font-size: 15px;
+        font-size: 12px;
     }
     .to-be-explanation {
         /* padding-top: 4.688rem; */
@@ -309,6 +320,10 @@ mark {
         /* border: 5px solid black; */
         /* color: var(--main-color); */
     }
+    .experience-section .button-left img, .button-right img {
+        height: 30px;
+        width: 30px; 
+    }
     .phone img {
         display: block;
         margin: 0 auto;
@@ -341,12 +356,15 @@ mark {
         display: flex;
         flex-direction: row;
         padding: 5px;
+        width: 90%;; 
+        margin: 0 auto;
+        height: 150px;
+        padding-bottom: 30px;
     }
     .explanation-content {
         /* padding: 1.875rem; */
         font-size: 15px;
-        /* width: 640px; 
-        height: 150px; */
+        
     }
     .download-suggestion {
         /* padding-top: 1.875rem; */
