@@ -52,61 +52,37 @@ const explanationArr = {
     imgSrc : ['../images/phone1.png', '../images/phone2.png', '../images/phone3.png', '../images/phone4.png']
 }
 
+const setCount = (count) => {
+    if(count <0) return explanationArr.title.length - 1;
+    if(count >explanationArr.title.length - 1) return 0;
+
+    return count;
+}
+
 let count = 0;
 let contentsCount = explanationArr.contents.length - 1; // 이미지 배열의 길이 - 1
 
 // console.log(explanationArr.title[1]);
 
-explanationElTitle.innerHTML = `<h3>${explanationArr.title[count]}</h3>`;
-explanationContent.innerHTML = explanationArr.contents[count];
 
 
 rightBtn.addEventListener('click', () => {
     // console.log("test1111");
-    
+    count = setCount(count + 1);
     explanationElTitle.innerHTML = `<h3>${explanationArr.title[count]}</h3>`;
     explanationContent.innerHTML = explanationArr.contents[count];
 
     img.src = explanationArr.imgSrc[count];
-    count++;
-    if(count > contentsCount){
-        count = 0;
-    }
+   
 })
 
 leftBtn.addEventListener('click', () => {
+    count = setCount(count - 1);
     // console.log("test222");
     explanationElTitle.innerHTML = `<h3>${explanationArr.title[count]}</h3>`;
     explanationContent.innerHTML = explanationArr.contents[count];
 
     img.src = explanationArr.imgSrc[count];
-    count--;
-    if(count < 0){
-        count = contentsCount;
-    }
+    
 })
 
-const container = document.querySelectorAll('.container');
-
-// console.log(container[0].innerHTML);
-const container0 = container[0].innerHTML;
-const container1 = container[1].innerHTML;
-const container2 = container[2].innerHTML;
-const container3 = container[3].innerHTML;
-
-function checkSize(){
-    
-    if(window.innerWidth <= 1200 && window.innerWidth >= 597){
-        for(let i = 0; i < container.length; i++){
-            container[i].innerHTML = '화면을 확대해주세요!😅';
-        }
-    }
-    else {
-        container[0].innerHTML = container0;
-        container[1].innerHTML = container1;
-        container[2].innerHTML = container2;
-        container[3].innerHTML = container3;
-    }
-}
-
-window.addEventListener('resize', checkSize);
